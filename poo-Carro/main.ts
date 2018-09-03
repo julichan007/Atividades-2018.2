@@ -1,5 +1,5 @@
 declare function require(msg : string) : any;
-var declare = require('readline-sync');
+var readline = require('readline-sync');
 
 import {CarroP} from "./carroPoo";
 
