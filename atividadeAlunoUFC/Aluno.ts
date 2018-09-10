@@ -25,7 +25,10 @@ export  class Aluno{
     } 
 
     public setIdade(idade: number) : void{
-        this.idade = idade;
+        if (idade >= 0 && idade == Math.floor(idade)){
+            this.idade = idade;
+        }
+        
     }
 
     public getCurso() : string{
@@ -41,8 +44,25 @@ export  class Aluno{
     }
 
     public setIra(ira : number) : void{
-        this.ira = ira;
+        if(ira >= 0 && ira <= 10){
+            this.ira = ira;
+        }  
     }
 
-    
+    public estudar(materia : string) : void{
+        console.log("estudando" + materia);
+    }
+
+    public matricular(disciplina : string) : void{
+        console.log("Matriculando nas disciplina " + disciplina)
+    }
+
+    public toString() : string{
+        let res : string = "";
+        res += "Nome " + this.nome + "\n";
+        res += "Idade" + this.idade + "\n";
+        res += "Curso" + this.curso + "\n";
+        res += "Ira" + this.ira + "\n";
+        return res;
+    }
 }

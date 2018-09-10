@@ -1,6 +1,5 @@
-import {Aluno} from './Aluno';
-
-let aluno1 : Aluno = new Aluno("Juliana", 33,"DD",7.5);
+import { Aluno } from '..\Aluno';
+let aluno1 = new Aluno("Juliana", 33, "DD", 7.5);
 console.log(aluno1.toString());
 aluno1.matricular("Direção de Arte");
 aluno1.estudar("POO");
