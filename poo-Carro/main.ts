@@ -43,7 +43,7 @@ while(true){
             break;
         case "movimento":
             let fazendoOCarroAndar : number = readline.question("Quantos km o carro vai andar? ");
-            car.andando();
+            car.andando(car.pessoas);
             break;
             
         
