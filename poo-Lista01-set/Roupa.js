@@ -1,49 +1,43 @@
-export class Roupa{
-    private tipo : string;
-    private cor : string;
-    private codigo : string;
-    private tamanho : string;
-    private quantidade : number;
-
-    public constructor(tipo : string, cor : string, codigo : string, tamanho : string, quantidade :  number){
+export class Roupa {
+    constructor(tipo, cor, codigo, tamanho, quantidade) {
         this.tipo = tipo;
         this.cor = cor;
         this.codigo = codigo;
         this.tamanho = tamanho;
         this.quantidade = quantidade;
     }
-    public getTipo() : string{
+    getTipo() {
         return this.tipo;
     }
-    public setTipo(tipo : string) : void{
+    setTipo(tipo) {
         this.tipo = tipo;
     }
-    public getCor() : string{
+    getCor() {
         return this.cor;
     }
-    public setCor(cor : string) : void{
+    setCor(cor) {
         this.cor = cor;
     }
-    public getCodigo() : string{
+    getCodigo() {
         return this.codigo;
     }
-    public setCodigo(codigo : string) : void{
+    setCodigo(codigo) {
         this.codigo = codigo;
     }
-    public getTamanho() : string{
+    getTamanho() {
         return this.tamanho;
     }
-    public setTamanho(tamanho : string) : void{
+    setTamanho(tamanho) {
         this.tamanho = tamanho;
     }
-    public getQuantidade(): number{
+    getQuantidade() {
         return this.quantidade;
     }
-    public setQuantidade(quantidade : number) : void{
+    setQuantidade(quantidade) {
         this.quantidade = quantidade;
     }
-    public toString() : string{
-        let s : string = "" ;
+    toString() {
+        let s = "";
         s = "Tipo: " + this.tipo + "\n";
         s = "Cor: " + this.cor + "\n";
         s = "Tamanho: " + this.tamanho + "\n";
