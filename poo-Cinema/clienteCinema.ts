@@ -1,7 +1,7 @@
 export class clienteCinema{
     private id : string;
     private fone : string;
-    private indice: string;
+    private indice: number;
 
     constructor(id : string, fone : string, indice : string){
         this.id = id;
