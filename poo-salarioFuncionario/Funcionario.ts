@@ -1,8 +1,8 @@
 export class Funcionario{
     private nome : string;
-    private diarias : number;
+    private diaria : number;
 
-    constructor(nome : string, diarias : number) {
+    constructor(nome : string, diaria : number) {
         this.nome = nome;
     }
     public getNome() : string{
@@ -12,13 +12,16 @@ export class Funcionario{
     public setNome(nome : string) : void{
         this.nome = nome;
     }
-    public getDiarias() : number{
-        return this.diarias;
+    public getDiaria() : number{
+        return this.diaria;
     }
-    public setDiarias(diarias : number) : void{
-        this.diarias = diarias;
+    public setDiaria(diarias : number) : void{
+        this.diaria = diarias;
     }
     public calcularSalario() : number{
-
+        return 0;
+    }
+    public addDiaria() : boolean{
+        return false;
     }
 }

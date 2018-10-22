@@ -21,4 +21,11 @@ export class Terceirizado extends Funcionario{
     public setHoras(horas : number) : void{
         this.horas = horas;
     }
+    public calcularSalario() : number{
+        let salario : number = (this.getHoras()* 4);
+        if (this.insalubre){
+            salario = salario + 500;
+        }
+        return salario;
+    }
 }
