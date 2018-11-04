@@ -8,7 +8,6 @@ export class Funcionario{
     public getNome() : string{
         return this.nome;
     }
-
     public setNome(nome : string) : void{
         this.nome = nome;
     }
@@ -23,5 +22,20 @@ export class Funcionario{
     }
     public addDiaria() : boolean{
         return false;
+    }
+    public cadastrarFuncionario(nome: string): void{
+
+    }
+    public mostrarFuncionario(nome: string): void{
+
+    }
+    public removerFuncionario(nome: string): void{
+
+    }
+    public toString() : any{
+        let func : string = "" + "\n"+
+        "Nome: " + this.nome + "\n" +
+        "Diarias: " + this.diaria ;
+        return func;
     }
 }

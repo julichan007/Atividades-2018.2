@@ -18,3 +18,46 @@ else if (comando == "addSta"){
     let sta : ServidorTA = new ServidorTA (n,0, nv);
     funcionarios.push(sta);
 }
+else if (comando == "addTer"){
+    nome : readline.question("Digite o nome:");
+    let horas : number = readline.question("Digite as horas trabalhadas: ");
+    let insalubre : string = readline.question("É insalubre? Diga se sim  ou não ");
+    let terc : Terceirizado = new Terceirizado(nome, 0, True, horas);
+    if (insalubre == "não"){
+        terc.setInsalubre(false);
+    }
+    funcionarios.push(terc);
+}
+else if (comando == "show"){
+    let nome =  readline.question("digite o nome do funcionario: ");
+    let f : Funcionario | undefined = undefined;
+    for (let i of funcionarios){
+        if (i.getNome() == nome){
+            f = i;
+        }
+    }
+    if (f == undefined){
+        console.log("Não exite");
+    }
+    else{
+        console.log(f);
+    }
+
+}
+let menu : string =  "" +
+        "1 - incluir funcionario " + "\n" +
+        "2 - mostrar funcionario " + "\n" +
+        "3 - remover funcionario" + "\n" +
+        ""
+while(true){
+    console.log(menu);
+    let comando : string = readline.question("Digite um comando ");
+    switch(comando){
+        case "1":
+            break;
+        case "2":
+            break;
+        case "3":
+            break;
+    }
+}
