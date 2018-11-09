@@ -11,18 +11,18 @@ let comando : string = readline.question("Digite um comendo: ");
 if (comando = "addProf"){
     let n :string =  readline.question("Digite um nome: ");
     let c : string = readline.question("Digite a classe: ");
-    let prof : Professor = new Professor( n,0,c);
+    let prof : Professor = new Professor( n,"Analis",12);
 }
 else if (comando == "addSta"){
     let nv :  number = readline.question("Digite o nivel: ");
-    let sta : ServidorTA = new ServidorTA (n,0, nv);
+    let sta : ServidorTA = new ServidorTA (0,"Anoisr", 12);
     funcionarios.push(sta);
 }
 else if (comando == "addTer"){
     nome : readline.question("Digite o nome:");
     let horas : number = readline.question("Digite as horas trabalhadas: ");
     let insalubre : string = readline.question("É insalubre? Diga se sim  ou não ");
-    let terc : Terceirizado = new Terceirizado(nome, 0, True, horas);
+    let terc : Terceirizado = new Terceirizado(true,horas, "Anahs", 12);
     if (insalubre == "não"){
         terc.setInsalubre(false);
     }
